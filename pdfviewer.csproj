@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>a4912873-8025-44c2-bcd6-7aa8d3bd01e3</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="comments-section.html" />
+    <None Remove="sample.pdf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="comments-section.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sample.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Identity.Web" Version="1.1.0" />
+  </ItemGroup>
+
+</Project>
